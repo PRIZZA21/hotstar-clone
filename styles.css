@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+*:focus {
+    outline: none;
+}
+/* navbar-settings */
+#disney-logo{
+    width: 85px;
+    height: 50px;
+    margin-left: 1rem;
+}
+.body
+{
+    font-family: 'Roboto', sans-serif;
+    background:#0c111b;
+}
+.navbar
+{
+    /* background: rgb(0,0,0); */
+/* background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(8,11,102,1) 89%, rgba(10,12,165,1) 100%); */
+background:#0c111b;
+font-family: 'Roboto', sans-serif;
+}
+.left_navbar
+{
+    color: white;
+}
+.nav_list{
+    list-style: none;
+    margin-top: 1.25rem;
+    padding-left: 0;
+    display: flex;
+}
+.nav_list li{
+    margin-left: 1rem;
+    cursor: pointer;
+}
+.nav_list li:hover{
+    color: #D6E4E5;
+}
+.right_navbar{
+    margin-left: 30rem;
+}
+.subscribe{
+    background-color:#1f80e0;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    height: 30px;
+    padding-right: 4px;
+    padding-left: 4px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    width: 85px;
+    margin-top: 4px;
+    font-family: 'Roboto', sans-serif;  
+    
+}
+.login
+{
+    margin-left: 1rem;
+    width: 60px;
+    height: 30px;
+    padding-right: 4px;
+    padding-left: 4px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    margin-top: 3.5px;
+    border: none;
+    border-radius: 4px;
+    background: none;
+    color:#D6E4E5;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    
+
+}
+#search-bar{
+    border: none;
+    border-bottom: 1px solid #aaa;
+    background: transparent;
+    outline: none;
+    transition: 0.5s;
+
+}
+#search-bar:focus{
+    width: 250px;
+    border-color: #1f80e0;
+}
+/* body */
+.body-container{
+    background-color: black;
+}
