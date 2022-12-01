@@ -19,17 +19,19 @@ body
 {
     font-family: 'Roboto', sans-serif;
     background-color:#0c111b !important;
+    
 }
+body::-webkit-scrollbar { width: 0 !important }
 .navbar
 {
-    /* background: rgb(0,0,0); */
-/* background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(8,11,102,1) 89%, rgba(10,12,165,1) 100%); */
+ 
 background:#0c111b;
 font-family: 'Roboto', sans-serif;
 }
 .left_navbar
 {
     color: white;
+    
 }
 .nav_list{
     list-style: none;
@@ -49,6 +51,7 @@ font-family: 'Roboto', sans-serif;
     display: flex;
 
 }
+
 .subscribe{
     background-color:#1f80e0;
     color: #fff;
@@ -145,6 +148,7 @@ font-family: 'Roboto', sans-serif;
     height: 100%;
     z-index: 2;
     color: white;
+    font-size: 1.5vw;
 }
 .movie-title
 {
@@ -158,17 +162,7 @@ font-family: 'Roboto', sans-serif;
     margin-top: 30px;
     opacity: 0.8;
 }
-/* .videos
-{
-    display: flex;
-    flex-flow: row wrap;
-} */
-/* video{
-    width: 100%;
-    height: 100%;
-    border-radius: 16px;
-    box-shadow: 10px 10px 6px 8px black,10px 10px 6px 8px black;
-} */
+
  .video-card-container
 {
     position: relative;
@@ -200,41 +194,6 @@ font-family: 'Roboto', sans-serif;
     display: none;
 } 
 
-/*  */
-
-/* .Recommend-For-You
-{
-  
-  margin: auto;
-  color: white;
-}
-.card-img{
-    height:200px;
-    object-fit: fill;
-}
-.section-heading{
-    margin: auto;
-    width: 92%;
-    height: 100%;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-    font-size: 1.5rem;
-}
-.cards-section{
-    display: flex;
-    height: 100%;
-    width: 92%;
-    margin: auto;
-}
-.card{
-    margin: 0 1rem;
-}
-.Popular-Shows
-{
-    color: white;
-    margin: auto;
-} */
-
 .title{
     color: #fff;
     opacity: 0.9;
@@ -249,6 +208,9 @@ font-family: 'Roboto', sans-serif;
        /* height is 250px */
     position: relative;
     margin: 20px 0 20px;
+}
+.movie-content{
+    padding-left: 50px;
 }
 .card-container{
     position: relative;
@@ -274,6 +236,8 @@ font-family: 'Roboto', sans-serif;
     overflow: hidden;
     margin-right: 15px;
     transition: 0.5s;
+    border: none;
+    box-shadow: 10px 5px 2px #06283D;
 }
 .card-img{
     width: 100%;
@@ -284,11 +248,11 @@ font-family: 'Roboto', sans-serif;
     transform:scale(1.1);
 }
 .card:hover .card-body{
-    opacity: 1;
+    opacity: 1;  /*this lines ensures that when we hover over the card we get the opacity of card body as 1 so that the rest things get displayed */
 }
 .card-body{
     opacity: 0;
-    width: 90%;
+    width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
@@ -376,3 +340,24 @@ font-family: 'Roboto', sans-serif;
     opacity: 0;
 }
 .pre-btn:hover img,.nxt-btn:hover img{opacity: 1;}
+@media only screen  and (max-width:900px)
+{ .carousel-container{
+    height: auto;
+}
+.movie-content{
+    display: none;
+}
+.left_navbar{
+    position: absolute;
+    display: none;
+}
+.video-card-container{
+    height: 15vw;
+}
+.search-input{
+    display: none;
+}
+.right_navbar{
+    margin-left: auto;
+}
+}

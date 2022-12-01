@@ -100,6 +100,7 @@ videoCards.forEach(element=>{
     
 })
 // cards
+
 let cardContainer = document.querySelectorAll('.card-container')
 let prebtns = document.querySelectorAll('.pre-btn')
 let nxtbtns = document.querySelectorAll('.nxt-btn')
